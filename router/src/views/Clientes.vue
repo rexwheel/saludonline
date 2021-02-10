@@ -2,7 +2,7 @@
     <div class="clientes">
         <h1>Cliente desde el view: </h1>
         
-        <router-link to="{ name:'Clientes', params:{id: item} }" 
+        <router-link :to="{ name:'Clientes', params:{id: item} }" 
         v-for="(item,index) of perfiles" :key="index">
             <button>
                 Foto {{ item }}
