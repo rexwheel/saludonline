@@ -18,13 +18,23 @@ const routes = [
     component: () => import('../views/About.vue')
   },
 
-  
+  {
+    path: '/clientes',
+    name: 'Clientes',
+    component: () => import('../views/Clientes.vue')
+  },
 
   {
     path: '/clientes/:id',
-    name: 'Clientes',
-    component: () => import('../views/Clientes.vue')
-  }
+    name: 'Perfil',
+    component: () => import('../components/Perfil.vue')
+  },
+
+  {
+    path: '/negocio',
+    name: 'Negocio',
+    component: () => import('../views/Negocio.vue')
+  },
 
   
  
@@ -35,5 +45,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+
 
 export default router
