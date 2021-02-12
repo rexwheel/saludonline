@@ -21,7 +21,7 @@
           ><i class="fas fa-globe-americas"></i>Websites</a
         >
         <br />
-        <span> <b>Dirección:</b> {{ negocio.direccion }}</span>
+        <span> <b>Dirección:</b> {{ negocio.direccion }} </span>
       </div>
     </div>
   </div>
